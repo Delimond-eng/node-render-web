@@ -11,6 +11,7 @@ app.set("views", path.join(__dirname, "views"));
 /*SET PUBLIC FOLDER PATH*/
 app.use("/vendor", express.static(path.join(__dirname, "public/vendor")));
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
+app.use("/nodes", express.static(path.join(__dirname, "node_modules")));
 
 /*SET THE VIEW ENGINE TO ejs*/
 app.use(expressLayouts);
